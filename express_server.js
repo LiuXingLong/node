@@ -1,4 +1,7 @@
-//express_server.js 文件
+// 官网：http://expressjs.com/zh-cn
+// 菜鸟教程：https://www.runoob.com/nodejs/nodejs-express-framework.html
+// 菜鸟教程: https://www.runoob.com/nodejs/nodejs-restful-api.html
+
 var express = require('express');
 var app = express();
 

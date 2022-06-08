@@ -1,3 +1,5 @@
+// 菜鸟教程：https://www.runoob.com/nodejs/node-js-get-post.html
+
 var http = require("http");
 
 http.createServer(function (request, response) {
