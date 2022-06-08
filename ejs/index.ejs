@@ -1,0 +1,20 @@
+<!-- 参考文档： https://blog.csdn.net/weixin_42881768/article/details/105418141  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EJS模板引擎</title>
+</head>
+<body>
+<h1><%= name %></h1>
+<ul>
+    <% for(let i = 0; i < data.length ; i++) { %>
+        <li>
+            <%= data[i].method %><a href="<%= data[i].url %>"><%= data[i].url %></a>
+        </li>
+    <% } %>
+</ul>
+</body>
+</html>
