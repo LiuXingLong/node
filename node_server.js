@@ -1,4 +1,5 @@
 // 菜鸟教程：https://www.runoob.com/nodejs/node-js-get-post.html
+// 官网教程：http://nodejs.cn/learn/make-an-http-post-request-using-nodejs
 
 var http = require("http");
 
