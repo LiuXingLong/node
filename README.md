@@ -23,7 +23,7 @@ node express_server.js
 └── package.json
 ```
 
-> 1. init.sh             按照express框架和ejs模版引擎脚本
+> 1. init.sh             安装express框架和ejs模版引擎脚本
 > 2. express_server.js   express框架创建http服务demo
 > 3. node_server.js      存nodejs创建http服务demo
 > 4. package.json        引用包
