@@ -17,13 +17,22 @@ node express_server.js
 ## 目录结构
 ```
 ├── README.md
+├── dist
+│   ├── img
+│   │   └── spark.jpg
+│   └── index.html
+├── ejs
+│   └── index.ejs
 ├── express_server.js
 ├── init.sh
 ├── node_server.js
+├── package-lock.json
 └── package.json
 ```
 
 > 1. init.sh             安装express框架和ejs模版引擎脚本
 > 2. express_server.js   express框架创建http服务demo
 > 3. node_server.js      存nodejs创建http服务demo
-> 4. package.json        引用包
+> 4. ejs                 ejs模版文件目录
+> 5. dist                静态文件目录
+> 6. package.json        引用包
