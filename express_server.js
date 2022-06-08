@@ -5,8 +5,8 @@
 var express = require('express');
 var app = express();
 
-// 设置跨域访问
-app.all("*", function(req, res, next) {
+// 对api接口设置支持跨域访问
+app.all("/api/*", function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "X-Requested-With");
     res.header("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
@@ -15,14 +15,19 @@ app.all("*", function(req, res, next) {
     next();
 });
 
+// 静态文件:  如Vue框架中构建好的dist目录中文件
+app.use('/dist', express.static('dist'));
+
 //  GET请求主页面  ejs模版引擎使用
 app.get('/', function (req, res) {
-    res.header("Content-Type", "text/html");
     console.log("主页");
+    res.header("Content-Type", "text/html");
     let ejs = require('ejs'), path = require('path');
     let data = [
-        {method: 'GET请求：', url: 'http://127.0.0.1:9999/api/get'},
-        {method: 'POST请求：', url:'http://127.0.0.1:9999/api/update'}
+        {method: 'GET请求：',  url: 'http://127.0.0.1:9999/api/get'},
+        {method: 'POST请求(需要post请求)：', url:'http://127.0.0.1:9999/api/update'},
+        {method: '静态页面：',  url:'http://127.0.0.1:9999/dist/index.html'},
+        {method: '静态图片：',  url:'http://127.0.0.1:9999/dist/img/spark.jpg'},
     ];
     ejs.renderFile(path.join(__dirname,'ejs/index.ejs'), {name:'ejs模版引擎demo', data: data}, (err, str) => {
         // 输出绘制后的 HTML 字符串
