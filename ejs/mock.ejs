@@ -1,0 +1,24 @@
+<!--
+官网:  https://ejs.bootcss.com
+github: https://github.com/mde/ejs
+参考文档: https://blog.csdn.net/weixin_42881768/article/details/105418141
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EJS模版引擎post请求第三方接口</title>
+</head>
+<body>
+<h1><%= name %></h1>
+<ul>
+    <% for(let i = 0; i < data.length ; i++) { %>
+        <li>
+            用户ID: <%= data[i].id %> 用户名: <%= data[i].name %>
+        </li>
+    <% } %>
+</ul>
+</body>
+</html>
