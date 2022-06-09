@@ -17,6 +17,7 @@ node express_server.js
 ## 目录结构
 ```
 ├── README.md
+├── cache
 ├── dist
 │   ├── img
 │   │   └── spark.jpg
@@ -35,4 +36,5 @@ node express_server.js
 > 3. node_server.js      存nodejs创建http服务demo
 > 4. ejs                 ejs模版文件目录
 > 5. dist                静态文件目录
-> 6. package.json        引用包
+> 6. cache               模版和数据生成静态html文件缓存目录
+> 7. package.json        引用包
