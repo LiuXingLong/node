@@ -33,7 +33,7 @@ node express_server.js
 
 > 1. init.sh             安装express框架和ejs模版引擎脚本
 > 2. express_server.js   express框架创建http服务demo
-> 3. node_server.js      存nodejs创建http服务demo
+> 3. node_server.js      nodejs创建http服务demo
 > 4. ejs                 ejs模版文件目录
 > 5. dist                静态文件目录
 > 6. cache               模版和数据生成静态html文件缓存目录
